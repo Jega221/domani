@@ -1,0 +1,16 @@
+/* File: styles/theme.css */
+
+:root {
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 24px;
+
+  --shadow-card: 0 10px 24px rgba(0, 0, 0, 0.05);
+
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-hero: 3.5rem;
+
+  --container-padding: 1.5rem;
+  --container-max: 1440px;
+}

@@ -1,0 +1,29 @@
+/* File: styles/globals.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:wght@600;700&display=swap");
+@import "tailwindcss";
+
+:root {
+  --font-heading: 'Lora', serif;
+  --font-body: 'Inter', sans-serif;
+
+  --color-primary: #0047AB; /* Deep Blue */
+  --color-accent: #3D9970;  /* Muted Green */
+  --color-dark-blue:#122741;
+  --color-white: #FFFFFF;
+  --color-light: #F8F8F8;
+  --color-gray: #1E1E1E;
+}
+
+body {
+  color: var(--color-primary);
+  background-color: var(--color-white);
+  font-family: var(--font-body);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: inherit;
+}
