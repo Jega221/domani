@@ -71,7 +71,7 @@ export default function ContactPage() {
 
         {/* Image */}
         <div className="hidden lg:block">
-          <Image src="/assets/contact-img.png" alt="Contact Illustration" width={600} height={600} className="w-full h-auto object-contain" />
+          <Image src="/assets/contact-img.png" alt="Contact Illustration" width={600} height={600} className="w-full rounded-lg h-auto object-contain" />
         </div>
       </div>
     </section>

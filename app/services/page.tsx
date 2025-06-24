@@ -8,15 +8,27 @@ const services = [
     step: "SERVICE 01",
     icon: "/assets/customs-icon.png",
     title: "Expert Customs Clearance",
-    desc: "We handle every aspect of customs—from tariff classification to duty management—ensuring fast, compliant cargo clearance with zero surprises.",
+    desc: "Navigate the complexities of international trade with confidence. Domani Transport handles every aspect of customs, ensuring fast, compliant, and seamless cargo clearance into and out of Nigeria.",
+    features: [
+      "Accurate Tariff Classification & Valuation",
+      "Efficient Duty & Tax Management",
+      "Full Compliance with SONCAP, NAFDAC, and More",
+      "Pre-Arrival Clearance and Fast Release",
+    ],
   },
   {
     step: "SERVICE 02",
     icon: "/assets/logistics.png",
     title: "Reliable Logistics & Transportation",
-    desc: "Whether road, air, or sea, we deliver flexible, tracked freight services across Nigeria with unmatched efficiency and safety.",
+    desc: " Domani Transport offers robust and dependable logistics and transportation services, ensuring your goods reach their destination throughout Nigeria with complete peace of mind.",
+    features: [
+      "We prioritize the smooth and safe transit of your cargo.",
+      "Our extensive reach covers all corners of Nigeria.",
+      "We commit to the highest safety standards for all your goods.",
+    ],
   },
 ];
+
 
 const ServicesPage = () => {
   return (
@@ -51,11 +63,18 @@ const ServicesPage = () => {
                 {service.title}
               </h3>
               <p
-                className="text-sm text-[var(--color-black)]/80 leading-relaxed"
-                style={{ fontFamily: "var(--font-body)" }}
-              >
-                {service.desc}
-              </p>
+                  className="text-sm text-[var(--color-black)]/80 leading-relaxed"
+                  style={{ fontFamily: "var(--font-body)" }}
+                >
+                  {service.desc}
+                </p>
+
+                <ul className="list-disc list-inside text-sm text-[var(--color-black)]/80 space-y-1" style={{ fontFamily: "var(--font-body)" }}>
+                  {service.features.map((point, i) => (
+                    <li key={i}>{point}</li>
+                  ))}
+                </ul>
+
             </div>
           ))}
         </div>

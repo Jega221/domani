@@ -26,7 +26,7 @@ const steps = [
     step: "STEP 04",
     icon: "/assets/delivery.png",
     title: "Optimized Transport",
-    desc: "We move goods nationwide using reliable road, air, and sea options.",
+    desc: "We move your goods nationwide.",
   },
   {
     step: "STEP 05",

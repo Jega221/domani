@@ -16,7 +16,7 @@ const WhatsAppButton = () => {
 
   return (
     <Link
-      href="https://wa.me/234098586790" // ← your WhatsApp number here
+      href="https://wa.me/+2348081905844" // ← your WhatsApp number here
       target="_blank"
       aria-label="Chat on WhatsApp"
       className={`fixed z-50 bottom-6 right-6 tra nsition-opacity duration-500 ${
