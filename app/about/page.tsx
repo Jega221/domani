@@ -1,5 +1,5 @@
 // File: app/about/page.tsx
-"use client";
+"use server";
 
 import Image from "next/image";
 import Link from "next/link";

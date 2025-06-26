@@ -7,11 +7,11 @@ import Link from "next/link";
 import Image from "next/image";
 
 const logos = [
-  "/assets/logo1.svg",
-  "/assets/logo2.svg",
-  "/assets/logo3.png",
-  "/assets/logo4.png",
-  "/assets/logo5.png",
+  "/assets/logo1.ico",
+  "/assets/logo2.ico",
+  "/assets/logo3.ico",
+  "/assets/logo4.ico",
+  "/assets/logo5.ico",
 ];
 
 const TrustSection = () => {
@@ -43,9 +43,7 @@ const TrustSection = () => {
               className="text-3xl sm:text-4xl font-bold mb-6 leading-snug"
               style={{ fontFamily: "var(--font-heading)" }}
             >
-              Experience seamless logistics and
-              <br className="hidden sm:block" />
-              stress-free customs clearance <br /> across Nigeria.
+              Experience seamless logistics & <br className="hidden sm:block" /> stress-free customs clearance <br /> across Nigeria.
             </h2>
 
             <div className="flex items-center space-x-[-12px] mb-4">

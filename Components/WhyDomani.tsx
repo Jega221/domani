@@ -1,5 +1,5 @@
 // File: components/WhyDomani.tsx
-"use client";
+"use server";
 
 import Image from "next/image";
 
