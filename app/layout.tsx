@@ -7,6 +7,7 @@ import Footer from "@/Components/Footer";
 import WhatsAppButton from "@/Components/WhatsAppButton";
 import { Toaster } from "react-hot-toast";
 
+
 export const metadata: Metadata = {
   title: "Domani Transport",
   description: "Efficient customs clearance and logistics in Nigeria.",

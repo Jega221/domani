@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import SEOHead from "@/Components/SEOHead";
 
 const services = [
   {
@@ -32,6 +33,15 @@ const services = [
 
 const ServicesPage = () => {
   return (
+    <>
+      <SEOHead
+        title="Domani Transport | Our Services"
+        description="Explore our comprehensive logistics and customs clearance services designed to streamline your cargo movement across Nigeria."
+        keywords="customs clearance, logistics, transportation, Nigeria, Domani Transport"
+        url="https://domanitransport.com/services"
+        image="/opengraph-image.png"
+      />
+
     <section className="bg-[var(--color-light)] px-6 sm:px-10 lg:px-[140px] py-24">
       <div className="max-w-6xl mx-auto">
         {/* Title */}
@@ -97,6 +107,7 @@ const ServicesPage = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 

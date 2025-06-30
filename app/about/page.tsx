@@ -3,9 +3,19 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import SEOHead from "@/Components/SEOHead";
 
 const AboutUsPage = () => {
   return (
+      <>
+      <SEOHead
+        title="Domani Transport | Customs & Logistics in Nigeria"
+        description="Hassle-free customs clearance, freight, and logistics services across Nigeria. Fast, reliable and efficient."
+        keywords="customs clearance Nigeria, import Nigeria, logistics Nigeria, Domani Transport"
+        url="https://domanitransport.com"
+        image="/opengraph-image.png"
+      />
+
     <section className="px-6 sm:px-10 lg:px-[140px] py-28 bg-[var(--color-white)] text-[var(--color-primary)]">
       {/* Heading + Intro */}
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 mb-24 items-center">
@@ -103,6 +113,7 @@ const AboutUsPage = () => {
         </Link>
       </div>
     </section>
+      </>
   );
 };
 
