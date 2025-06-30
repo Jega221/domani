@@ -1,6 +1,5 @@
 // File: app/sitemap.xml/route.ts
 
-import { type MetadataRoute } from 'next';
 
 export async function GET(): Promise<Response> {
   const baseUrl = 'https://www.domanitransport.com/'; // ✅ Update this to your real domain
