@@ -7,7 +7,7 @@ export function GET() {
 User-agent: *
 Disallow:
 
-Sitemap: https://www.domanitransport.com/sitemap.xml
+Sitemap: https://domanitransport.com/sitemap.xml
   `.trim();
 
   return new NextResponse(content, {

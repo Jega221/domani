@@ -47,7 +47,7 @@ const Footer = () => {
           <div className="flex items-start gap-3">
             <MapPin size={18} className="mt-1" />
             <p style={{ fontFamily: "var(--font-body)" }}>
-              No.18 Fatima house, Kwari market Fagge LGA, Kano state Nigeria
+              No.18 Fatima house, Kwari market Fagge LGA, Kano state Nigeria.
             </p>
           </div>
         </div>

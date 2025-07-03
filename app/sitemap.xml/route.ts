@@ -2,14 +2,14 @@
 
 
 export async function GET(): Promise<Response> {
-  const baseUrl = 'https://www.domanitransport.com/'; // ✅ Update this to your real domain
+  const baseUrl = 'https://www.domanitransport.com/';
 
   const staticPaths = [
     '',           // homepage
-    '/home',
+    '/how-we-work',
     '/contact',
-    '/services',  // if created
-    '/about',   // if created
+    '/services',  
+    '/about', 
   ];
 
   const urls = staticPaths.map((path) => {
@@ -25,8 +25,7 @@ export async function GET(): Promise<Response> {
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     <urlset
-      xmlns="Sitemap: https://domanitransport.com/sitemap.xml"
-    >
+      xmlns="Sitemap: http://www.sitemaps.org/schemas/sitemap/0.9" >
       ${urls.join('')}
     </urlset>
   `;
