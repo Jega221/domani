@@ -18,9 +18,17 @@ const Navbar = () => {
   return (
     <header className="bg-[var(--color-dark-blue)] text-white fixed top-0 left-0 w-full z-50 px-6 sm:px-10 lg:px-[140px] py-6 flex items-center justify-between">
       {/* Logo */}
-      <Link href="/">
-        <Image src="/assets/logo.svg" alt="Domani Logo" width={30} height={3} />
-      </Link>
+      <Link href="/" className="flex items-center"> 
+    <Image
+      src="/assets/logo.svg"
+      alt="Domani Logo"
+      width={30}  
+      height={30}
+    />
+    <span className="ml-2 text-lg font-lora"> 
+      Domani Transport
+    </span>
+  </Link>
 
       {/* Desktop nav */}
       <nav className="hidden lg:flex items-center gap-8 text-sm font-medium" style={{ fontFamily: "var(--font-body)" }}>

@@ -2,7 +2,7 @@
 
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
-import Link from "next/link"; // ← add this
+import Link from "next/link"; 
 
 const Hero = () => {
   const titleRef = useRef(null);
@@ -30,13 +30,13 @@ const Hero = () => {
   return (
     <section className="text-white relative min-h-[90vh] w-full bg-[url('/assets/hero-bg.png')] bg-cover bg-center flex items-center px-4 sm:px-6 md:px-10 lg:px-[140px] overflow-hidden">
       <div className="w-full max-w-[700px] text-left mx-auto lg:mx-0">
-        <h1
+        <h2
           ref={titleRef}
-          className="text-[2rem] sm:text-[2.5rem] md:text-[3rem] font-bold text-[var(--color-white)] leading-[1.2] mb-6 whitespace-pre-line break-words"
+          className="text-[2rem] sm:text-[2.5rem] md:text-[3rem] semibold text-[var(--color-white)] leading-[1.2] mb-6 whitespace-pre-line break-words"
           style={{ fontFamily: "var(--font-heading)" }}
         >
-          {`Seamless Customs Clearance\n& Logistics Across Nigeria.`}
-        </h1>
+          {`Import. Clear. Deliver.\n Across Nigeria, Without Delays.`}
+        </h2>
 
         <p
           ref={bodyRef}
@@ -52,7 +52,7 @@ const Hero = () => {
             className="bg-[var(--color-accent)] text-[var(--color-white)] px-6 py-3 rounded-full shadow-md text-base sm:text-lg hover:bg-opacity-90 transition flex items-center gap-2"
             style={{ fontFamily: "var(--font-body)" }}
           >
-            Let’s talk now <span className="text-xl">→</span>
+            Let's talk now <span className="text-xl">→</span>
           </button>
         </Link>
       </div>
