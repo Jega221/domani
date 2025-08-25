@@ -7,11 +7,11 @@ import Link from "next/link";
 import Image from "next/image";
 
 const logos = [
-  "/assets/logo1.ico",
-  "/assets/logo2.ico",
-  "/assets/logo3.ico",
-  "/assets/logo4.ico",
-  "/assets/logo5.ico",
+  "/assets/cosco.svg",
+  "/assets/maersk.svg",
+  "/assets/cma.svg",
+  "/assets/msc.svg",
+  "/assets/pil.svg",
 ];
 
 const TrustSection = () => {
@@ -57,7 +57,7 @@ const TrustSection = () => {
               style={{ fontFamily: "var(--font-body)" }}
             >
               Join hundreds of businesses who rely on us for efficient cargo movement
-              and transparent service—no delays, no surprises.
+              and transparent.
             </p>
           </div>
 
@@ -70,6 +70,10 @@ const TrustSection = () => {
               Explore Services →
             </button>
           </Link>
+        </div>
+
+        <div className="mb-10">
+          <h2>Our Partners</h2>
         </div>
 
         {/* Logos centered under paragraph */}

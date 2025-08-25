@@ -32,10 +32,10 @@ const Hero = () => {
       <div className="w-full max-w-[700px] text-left mx-auto lg:mx-0">
         <h2
           ref={titleRef}
-          className="text-[2rem] sm:text-[2.5rem] md:text-[3rem] semibold text-[var(--color-white)] leading-[1.2] mb-6 whitespace-pre-line break-words"
+          className="text-[3rem] sm:text-[2.5rem] md:text-[3rem] semibold text-[var(--color-white)] leading-[1.2] mb-6 whitespace-pre-line break-words"
           style={{ fontFamily: "var(--font-heading)" }}
         >
-          {`Import. Clear. Deliver.\n Across Nigeria, Without Delays.`}
+          {`Imports Goods into Nigeria\n Without Delays.`}
         </h2>
 
         <p

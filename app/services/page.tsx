@@ -9,7 +9,7 @@ const services = [
     step: "SERVICE 01",
     icon: "/assets/customs-icon.png",
     title: "Expert Customs Clearance",
-    desc: "Navigate the complexities of international trade with confidence. Domani Transport handles every aspect of customs, ensuring fast, compliant, and seamless cargo clearance into and out of Nigeria.",
+    desc: "Domani Transport is your trusted partner for quick and legal customs clearance. With nearly ten years of experience, we handle all the complicated paperwork and rules to get your goods moving quickly and smoothly. Our team works hard to avoid delays and extra costs, ensuring your business gets the speed and compliance it needs. Whether you're importing or exporting, we have the expertise to make your shipping easier and give you peace of mind.",
     features: [
       "Accurate Tariff Classification & Valuation",
       "Efficient Duty & Tax Management",
@@ -21,7 +21,7 @@ const services = [
     step: "SERVICE 02",
     icon: "/assets/logistics.png",
     title: "Reliable Logistics & Transportation",
-    desc: " Domani Transport offers robust and dependable logistics and transportation services, ensuring your goods reach their destination throughout Nigeria with complete peace of mind.",
+    desc: "We offer reliable road freight services across Nigeria. We'll handle your deliveries from start to finish, ensuring your goods arrive safely and on time.",
     features: [
       "We prioritize the smooth and safe transit of your cargo.",
       "Our extensive reach covers all corners of Nigeria.",
@@ -91,18 +91,12 @@ const ServicesPage = () => {
 
         {/* CTA */}
         <div className="mt-24 text-center">
-          <h3
-            className="text-2xl sm:text-3xl font-bold mb-6"
-            style={{ fontFamily: "var(--font-heading)" }}
-          >
-            Need a tailored logistics solution?
-          </h3>
           <Link
-            href="/contact"
+            href="/how-to-import"
             className="inline-block bg-[var(--color-accent)] text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-opacity-90 transition"
             style={{ fontFamily: "var(--font-body)" }}
           >
-            Contact Our Experts →
+            How to import →
           </Link>
         </div>
       </div>
