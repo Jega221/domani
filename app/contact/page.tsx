@@ -4,7 +4,7 @@ import { useRef, useState } from "react";
 import Image from "next/image";
 import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
-import SEOHead from "@/Components/SEOHead";
+
 
 export default function ContactPage() {
   const formRef = useRef<HTMLFormElement>(null);
@@ -35,15 +35,6 @@ export default function ContactPage() {
   };
 
   return (
-     <>
-          <SEOHead
-            title="Domani Transport | Customs & Logistics in Nigeria"
-            description="Hassle-free customs clearance, freight, and logistics services across Nigeria. Fast, reliable and efficient."
-            keywords="customs clearance Nigeria, import Nigeria, logistics Nigeria, Domani Transport"
-            url="https://domanitransport.com"
-            image="/opengraph-image.png"
-          />
-   
     <section className="min-h-screen px-6 sm:px-10 lg:px-[140px] py-28 bg-[var(--color-white)] text-[var(--color-primary)]">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         {/* Contact Form */}
@@ -85,6 +76,5 @@ export default function ContactPage() {
         </div>
       </div>
     </section>
-     </>
   );
 }

@@ -1,13 +1,11 @@
 // File: app/about/page.tsx
-"use server";
-
 import { Metadata } from 'next'
 import Image from "next/image"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: 'Customs & Clearing Agent Nigeria”, “Customs Clearance',
-  description: 'Hassle-free customs clearance, freight, and logistics services across Nigeria. Fast, reliable and efficient.',
+  title: ' About The Clearing Agent – Lagos/Kano Customs Clearance & Freight Forwarding Experts',
+  description: 'Learn how The Clearing Agent Solutions Ltd provides reliable customs clearance, freight forwarding, warehousing & logistics in Nigeria. Over 7 years of combined experience delivering value, timeliness & transparency.',
   keywords: 'customs clearance Nigeria, import Nigeria, logistics Nigeria, Domani Transport',
   openGraph: {
     title: 'Domani Transport | Customs & Logistics in Nigeria',
