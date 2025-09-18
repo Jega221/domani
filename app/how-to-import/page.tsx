@@ -1,19 +1,30 @@
 // File: app/how-to-import/page.tsx
 "use server";
 
-import Link from "next/link";
-import SEOHead from "@/Components/SEOHead";
+import { Metadata } from 'next'
+import Image from "next/image"
+import Link from "next/link"
+
+export const metadata: Metadata = {
+  title: 'Import & Export Customs Clearance Services — The Clearing Agent Nigeria',
+  description: 'Comprehensive customs clearance services for import & export in Nigeria. We handle documentation, duty assessments, terminal deliveries & more —for vehicles, polyester, industrial, agricultural, energy sectors.',
+  keywords: 'customs clearance Nigeria, import Nigeria, logistics Nigeria, Domani Transport',
+  openGraph: {
+    title: 'Domani Transport | Customs & Logistics in Nigeria',
+    description: 'Hassle-free customs clearance, freight, and logistics services across Nigeria. Fast, reliable and efficient.',
+    url: 'https://domanitransport.com/how-to-import',
+    images: [{
+      url: '/opengraph-image.png',
+    }],
+  }
+}
+
+
 
 const HowToImportPage = () => {
   return (
     <>
       {/* SEO for the How-To-Import page */}
-      <SEOHead
-        title="How to Import Goods into Nigeria | Domani Transport"
-        description="A step-by-step guide to the importation process in Nigeria, including required documents, regulations, and how Domani Transport simplifies the entire journey."
-        keywords="import process Nigeria, customs clearance Nigeria, customs clearance guide, import regulations, Form M, PAAR, SONCAP"
-        url="https://domanitransport.com/how-to-import"
-      />
 
       {/* Main content section */}
       <section className="bg-[var(--color-light)] px-6 sm:px-10 lg:px-[140px] py-24">

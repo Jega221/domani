@@ -1,4 +1,3 @@
-import Head from "next/head";
 import type { Metadata } from "next";
 import "../styles/globals.css";
 
@@ -6,13 +5,54 @@ import Navbar from "@/Components/Navbar";
 import Footer from "@/Components/Footer";
 import WhatsAppButton from "@/Components/WhatsAppButton";
 import { Toaster } from "react-hot-toast";
+import { Inter, Lora } from "next/font/google";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-body",
+  weight: ["400", "500", "600"],
+  display: "swap",
+});
+
+const lora = Lora({
+  subsets: ["latin"],
+  variable: "--font-heading",
+  weight: ["600", "700"],
+  display: "swap",
+});
 
 
 export const metadata: Metadata = {
-  title: "Domani Transport",
-  description: "Efficient customs clearance and logistics in Nigeria.",
-  icons: {
-    icon: "/favicon.svg", // this will add: <link rel="icon" href="/favicon.svg" />
+  title: {
+    default:"custums clearance nigeria | Domani Transport",
+    template: "%s -  Domani Transport",
+  },
+  description: "Trusted clearing agent in Lagos/Kano, Nigeria. We handle import/export, customs clearance, freight forwarding & logistics with speed, transparency & competitive pricing.",
+  keywords: [
+    "customs clearance Nigeria",
+    "import Nigeria",
+    "logistics Nigeria",
+    "freight forwarding",
+    "clearance agent",
+    "clearance services",
+    "Domani Transport"
+  ],
+  openGraph: {
+    title: "Domani Transport | Customs & Logistics in Nigeria",
+    description: "Hassle-free customs clearance, freight, and logistics services across Nigeria. Fast, reliable and efficient.",
+    url: "https://domanitransport.com",
+    images: [
+      {
+        url: "/opengraph-image.png",
+      },
+    ],
+    siteName: "Domani Transport",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Domani Transport | Customs & Logistics in Nigeria",
+    description: "Hassle-free customs clearance, freight, and logistics services across Nigeria. Fast, reliable and efficient.",
+    images: ["/opengraph-image.png"],
   },
 };
 
@@ -22,10 +62,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {    
   return (
-    <html lang="en">
-      <Head>
-        <link rel="icon" href="/favicon.svg" />
-      </Head>
+    <html lang="en" className={`${inter.variable} ${lora.variable}`}>
       <body>
         <Navbar />
         <Toaster position="top-right" />

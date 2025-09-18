@@ -1,8 +1,22 @@
 "use server";
+import { Metadata } from 'next'
+import Image from "next/image"
+import Link from "next/link"
 
-import Image from "next/image";
-import Link from "next/link";
-import SEOHead from "@/Components/SEOHead";
+export const metadata: Metadata = {
+  title: 'How We Work – Customs Clearance Made Simple in Nigeria',
+  description: 'Discover our step-by-step process for customs clearance, import, export & logistics in Nigeria. Transparent, reliable & compliant solutions tailored to your needs.',
+  keywords: 'customs clearance Nigeria, import Nigeria, logistics Nigeria, freight forwarding, clearance agent, clearance services, Domani Transport',
+  openGraph: {
+    title: 'Domani Transport | Customs & Logistics in Nigeria',
+    description: 'Hassle-free customs clearance, freight, and logistics services across Nigeria. Fast, reliable and efficient.',
+    url: 'https://domanitransport.com/how-we-work',
+    images: [{
+      url: '/opengraph-image.png',
+    }],
+  }
+}
+
 
 const steps = [
   {
@@ -39,14 +53,6 @@ const steps = [
 
 const HowWeWork = () => {
   return (
-    <>
-      <SEOHead
-        title="How We Work | Domani Transport"
-        description="Discover our streamlined process for hassle-free customs clearance and logistics services in Nigeria."
-        keywords="customs clearance, logistics, Nigeria, Domani Transport, how we work"
-        url="https://domanitransport.com/how-we-work"
-        image="/opengraph-image.png"
-      />
 
     <section className="bg-[var(--color-light)] px-6 sm:px-10 lg:px-[140px] py-24">
       <div className="max-w-6xl mx-auto">
@@ -106,7 +112,6 @@ const HowWeWork = () => {
         </div>
       </div>
     </section>
-     </>
   );
 };
 

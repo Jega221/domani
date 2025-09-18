@@ -31,9 +31,7 @@ const WhyDomani = () => {
     <section className="bg-[#122741] px-6 sm:px-10 lg:px-[140px] py-20">
       <div className="max-w-6xl mx-auto">
         <h2
-  className="text-3xl sm:text-4xl font-bold mb-12 max-w-2xl leading-snug"
-  style={{ fontFamily: "var(--font-heading)", color: "#F8F8F8 !important" }}
->
+  className="text-3xl sm:text-4xl text-white font-bold mb-12 max-w-2xl leading-snug">
   Why Domani Transport is Your <br className="hidden md:block" /> Best Choice
 </h2>
 
