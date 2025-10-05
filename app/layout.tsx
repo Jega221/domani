@@ -24,7 +24,7 @@ const lora = Lora({
 
 export const metadata: Metadata = {
   title: {
-    default:"custums clearance nigeria | Domani Transport",
+    default:"Domani Transport | Customs clearance & Logistics in Nigeria",
     template: "%s -  Domani Transport",
   },
   description: "Trusted clearing agent in Lagos/Kano, Nigeria. We handle import/export, customs clearance, freight forwarding & logistics with speed, transparency & competitive pricing.",
