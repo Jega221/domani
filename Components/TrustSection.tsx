@@ -43,7 +43,7 @@ const TrustSection = () => {
               className="text-3xl sm:text-4xl font-bold mb-6 leading-snug"
               style={{ fontFamily: "var(--font-heading)" }}
             >
-              Experience seamless logistics & <br className="hidden sm:block" /> stress-free customs clearance <br /> across Nigeria.
+              Experience the best logistics & <br className="hidden sm:block" /> stress-free customs clearance <br /> across Nigeria.
             </h2>
 
             <div className="flex items-center space-x-[-12px] mb-4">
@@ -56,8 +56,8 @@ const TrustSection = () => {
               className="text-base text-[var(--color-gray)] max-w-xl"
               style={{ fontFamily: "var(--font-body)" }}
             >
-              Join hundreds of businesses who rely on us for efficient cargo movement
-              and transparent.
+              Join hundreds of businesses who rely on us for there customs clearance  
+              and transportation of goods.
             </p>
           </div>
 

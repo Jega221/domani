@@ -7,17 +7,17 @@ const features = [
   {
     icon: "/assets/speed.png",
     title: "Speed & Efficiency",
-    description: "Minimize Demurrage, Accelerate Delivery",
+    description: "Minimize Demurrage, Accelerate Delivery.",
   },
   {
     icon: "/assets/trust.png",
     title: "Transparency & Trust",
-    description: "Clear Costs, Real-time Updates, No Surprises",
+    description: "Clear Costs, Real-time Updates, No Surprises.",
   },
   {
     icon: "/assets/expart.png",
     title: "Expert Compliance",
-    description: "Navigate Regulations Flawlessly.",
+    description: "Reliable Customs Clearance, avoid Delays & Fines.",
   },
   {
     icon: "/assets/end.png",

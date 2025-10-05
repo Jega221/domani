@@ -39,7 +39,8 @@ const ServicesSection = () => {
             className="text-base sm:text-lg max-w-2xl text-[var(--color-gray)]"
             style={{ fontFamily: "var(--font-body)" }}
           >
-            We offer a full spectrum of integrated logistics services, ensuring your cargo moves efficiently and compliantly through every stage of its journey.
+            From customs clearance to freight forwarding, we handle it all with
+            expertise and care.
           </p>
         </div>
 

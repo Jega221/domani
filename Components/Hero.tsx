@@ -1,8 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import gsap from "gsap";
+import Link from "next/link";
 import { useEffect, useRef } from "react";
-import Link from "next/link"; 
 
 const Hero = () => {
   const titleRef = useRef(null);
@@ -28,14 +29,28 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="text-white relative min-h-[90vh] w-full bg-[url('/assets/hero-bg.png')] bg-cover bg-center flex items-center px-4 sm:px-6 md:px-10 lg:px-[140px] overflow-hidden">
-      <div className="w-full max-w-[700px] text-left mx-auto lg:mx-0">
+    <section className="relative flex items-center min-h-[90vh] w-full overflow-hidden px-4 sm:px-6 md:px-10 lg:px-[140px]">
+      {/* Optimized background image */}
+      <Image
+        src="/assets/hero-bg.png"
+        alt="Cargo ship and containers representing international logistics"
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover object-center z-0"
+      />
+
+      {/* Overlay (optional for contrast) */}
+      <div className="absolute inset-0 bg-black/20 z-10" />
+
+      {/* Content */}
+      <div className="relative z-20 w-full max-w-[700px] text-left mx-auto lg:mx-0 text-white">
         <h2
           ref={titleRef}
-          className="text-[3rem] sm:text-[2.5rem] md:text-[3rem] semibold text-[var(--color-white)] leading-[1.2] mb-6 whitespace-pre-line break-words"
+          className="text-[3rem] sm:text-[2.5rem] md:text-[3rem] font-semibold leading-[1.2] mb-6 whitespace-pre-line break-words"
           style={{ fontFamily: "var(--font-heading)" }}
         >
-          {`Imports Goods into Nigeria\n Without Delays.`}
+          {`Imports Goods into Nigeria\nWithout Delays.`}
         </h2>
 
         <p
@@ -52,7 +67,7 @@ const Hero = () => {
             className="bg-[var(--color-accent)] text-[var(--color-white)] px-6 py-3 rounded-full shadow-md text-base sm:text-lg hover:bg-opacity-90 transition flex items-center gap-2"
             style={{ fontFamily: "var(--font-body)" }}
           >
-            Let's talk now <span className="text-xl">→</span>
+            Let&apos;s talk now <span className="text-xl">→</span>
           </button>
         </Link>
       </div>

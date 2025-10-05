@@ -38,8 +38,8 @@ export const metadata: Metadata = {
     "Domani Transport"
   ],
   openGraph: {
-    title: "Domani Transport | Customs & Logistics in Nigeria",
-    description: "Hassle-free customs clearance, freight, and logistics services across Nigeria. Fast, reliable and efficient.",
+    title: "Domani Transport | Customs clearance & Logistics in Nigeria",
+    description: "Domani Transport provides customs clearance and logistics services in Nigeria, helping businesses import goods efficiently and compliantly.",
     url: "https://domanitransport.com",
     images: [
       {
@@ -50,8 +50,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Domani Transport | Customs & Logistics in Nigeria",
-    description: "Hassle-free customs clearance, freight, and logistics services across Nigeria. Fast, reliable and efficient.",
+    title: "Domani Transport | Customs clearance & Logistics in Nigeria",
+    description: "Domani Transport provides customs clearance and logistics services in Nigeria, helping businesses import goods efficiently and compliantly.",
     images: ["/opengraph-image.png"],
   },
 };
