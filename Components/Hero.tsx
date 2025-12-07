@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import gsap from "gsap";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
@@ -30,18 +29,20 @@ const Hero = () => {
 
   return (
     <section className="relative flex items-center min-h-[90vh] w-full overflow-hidden px-4 sm:px-6 md:px-10 lg:px-[140px]">
-      {/* Optimized background image */}
-      <Image
-        src="/assets/hero-bg.png"
-        alt="Cargo ship and containers representing international logistics"
-        fill
-        priority
-        sizes="100vw"
-        className="object-cover object-center z-0"
-      />
+      {/* Video Background */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover z-0"
+      >
+        <source src="/assets/global-logistics-network-concept.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
 
-      {/* Overlay (optional for contrast) */}
-      <div className="absolute inset-0 bg-black/20 z-10" />
+      {/* Overlay for contrast */}
+      <div className="absolute inset-0 bg-black/40 z-10" />
 
       {/* Content */}
       <div className="relative z-20 w-full max-w-[700px] text-left mx-auto lg:mx-0 text-white">

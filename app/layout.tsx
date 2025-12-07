@@ -3,7 +3,6 @@ import "../styles/globals.css";
 
 import Navbar from "@/Components/Navbar";
 import Footer from "@/Components/Footer";
-import WhatsAppButton from "@/Components/WhatsAppButton";
 import { Toaster } from "react-hot-toast";
 import { Inter, Lora } from "next/font/google";
 
@@ -67,7 +66,7 @@ export default function RootLayout({
         <Navbar />
         <Toaster position="top-right" />
         <main>{children}</main>
-        <WhatsAppButton />
+        
         <Footer />
       </body>
     </html>
