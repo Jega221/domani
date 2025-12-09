@@ -74,7 +74,7 @@ const Footer = () => {
             <button
               type="submit"
               disabled={loading}
-              className="bg-[var(--color-accent)] text-[var(--color-white)] px-6 py-2 rounded-full font-medium hover:bg-opacity-90 transition"
+              className="bg-[var(--color-accent)] text-[var(--color-white)] px-6 py-2 rounded-full font-medium hover:bg-opacity-90 transition cursor-pointer"
             >
               {loading ? "Joining..." : "Join"}
             </button>

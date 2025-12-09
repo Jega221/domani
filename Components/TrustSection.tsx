@@ -64,7 +64,7 @@ const TrustSection = () => {
           {/* CTA */}
           <Link href="/services">
             <button
-              className="mt-8 lg:mt-16 border border-[var(--color-accent)] text-[var(--color-gray)] px-6 py-3 rounded-full text-sm font-medium hover:bg-[var(--color-accent)] hover:text-white transition"
+              className="mt-8 lg:mt-16 border border-[var(--color-accent)] text-[var(--color-gray)] px-6 py-3 rounded-full text-sm font-medium hover:bg-[var(--color-accent)] hover:text-white transition cursor-pointer "
               style={{ fontFamily: "var(--font-body)" }}
             >
               Explore Services →
@@ -73,7 +73,7 @@ const TrustSection = () => {
         </div>
 
         <div className="mb-10">
-          <h2>Our Partners</h2>
+          <h2>We clear shipments from ALL major shipping lines</h2>
         </div>
 
         {/* Logos centered under paragraph */}
